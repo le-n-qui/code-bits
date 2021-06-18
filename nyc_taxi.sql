@@ -11,3 +11,5 @@ WHERE
   trip_distance > 0
   AND fare_amount/trip_distance BETWEEN 2 AND 10
   AND dropoff_datetime > pickup_datetime
+GROUP BY hour
+ORDER BY hour
