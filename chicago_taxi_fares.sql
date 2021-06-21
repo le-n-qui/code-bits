@@ -8,7 +8,8 @@ SELECT
   EXTRACT(DAYOFWEEK FROM trip_start_timestamp) AS day,
   FORMAT('%3.2f', MAX(fare)) AS maximum_fare,
   FORMAT('%3.2f', MIN(fare)) AS minimum_fare,
-  FORMAT('%3.2f', AVG(fare)) AS avg_fare
+  FORMAT('%3.2f', AVG(fare)) AS avg_fare,
+  FORMAT('%3.2f', STDDEV(fare)) AS std_dev_fare
 FROM
   `bigquery-public-data.chicago_taxi_trips.taxi_trips`
 WHERE
