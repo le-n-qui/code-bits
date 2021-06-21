@@ -9,7 +9,8 @@ SELECT
   FORMAT('%3.2f', MAX(fare)) AS maximum_fare,
   FORMAT('%3.2f', MIN(fare)) AS minimum_fare,
   FORMAT('%3.2f', AVG(fare)) AS avg_fare,
-  FORMAT('%3.2f', STDDEV(fare)) AS std_dev_fare
+  FORMAT('%3.2f', STDDEV(fare)) AS std_dev_fare,
+  COUNT(1) AS rides
 FROM
   `bigquery-public-data.chicago_taxi_trips.taxi_trips`
 WHERE
