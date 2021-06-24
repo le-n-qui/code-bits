@@ -7,6 +7,7 @@ SELECT
   operateschools170cd AS is_school
 FROM
   `bigquery-public-data.irs_990.irs_990_2015`
+WHERE operateschools170cd = 'Y'
 ORDER BY totrevenue DESC
 LIMIT 10
  
