@@ -11,3 +11,4 @@ FROM
   `bigquery-public-data.irs_990.irs_990_ein`
 WHERE
   state IS NULL
+LIMIT 10
