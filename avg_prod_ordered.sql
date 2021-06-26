@@ -4,7 +4,7 @@
 # Find cities with the highest number of products ordered
 SELECT
   geoNetwork_city,
-  totals_transactions,
+  SUM(totals_transactions) AS total_products_ordered,
   fullVisitorId
 FROM
   `data-to-insights.ecommerce.rev_transactions`
