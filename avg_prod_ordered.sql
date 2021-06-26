@@ -23,4 +23,5 @@ SELECT
 FROM
   `data-to-insights.ecommerce.rev_transactions`
 GROUP BY geoNetwork_city
+HAVING avg_products_ordered > 20
 ORDER BY avg_products_ordered DESC
