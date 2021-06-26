@@ -5,7 +5,7 @@
 SELECT
   geoNetwork_city,
   SUM(totals_transactions) AS total_products_ordered,
-  fullVisitorId
+  COUNT(DISTINCT fullVisitorId) AS distinct_visitors
 FROM
   `data-to-insights.ecommerce.rev_transactions`
 
