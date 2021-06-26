@@ -9,5 +9,6 @@ SELECT
 FROM
   `data-to-insights.ecommerce.rev_transactions`
 GROUP BY geoNetwork_city
+ORDER BY total_products_ordered DESC
 
 # Find the average number of products ordered by cities via Google Ecommerce site
