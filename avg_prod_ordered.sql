@@ -8,5 +8,6 @@ SELECT
   COUNT(DISTINCT fullVisitorId) AS distinct_visitors
 FROM
   `data-to-insights.ecommerce.rev_transactions`
+GROUP BY geoNetwork_city
 
 # Find the average number of products ordered by cities via Google Ecommerce site
