@@ -8,3 +8,6 @@ FROM
   `data-to-insights.ecommerce.rev_transactions`
 GROUP BY
   hits_product_v2ProductCategory
+ORDER BY 
+  number_of_products DESC
+LIMIT 5
