@@ -6,3 +6,5 @@ SELECT
   hits_product_v2ProductCategory
 FROM 
   `data-to-insights.ecommerce.rev_transactions`
+GROUP BY
+  hits_product_v2ProductCategory
