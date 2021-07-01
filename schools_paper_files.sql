@@ -6,3 +6,5 @@ SELECT
   *
 FROM 
   `bigquiery-public-data.irs_990.irs_990_2015`
+WHERE
+  elf = 'P' AND operateschools170cd = 'Y'
