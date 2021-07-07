@@ -17,6 +17,7 @@ OPTIONS(
 SELECT DISTINCT
   fullVisitorId,
   CAST(visitId AS STRING) AS visitId,
-  channelGrouping
+  channelGrouping,
+  totalTransactionRevenue / 1000000 AS totalTransactionRevenue
 FROM
   `data-to-insights.ecommerce.all_sessions_raw_table`
