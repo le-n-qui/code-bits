@@ -15,6 +15,7 @@ OPTIONS(
   description="Revenue transactions for 08/01/2017"
 ) AS
 SELECT DISTINCT
-  fullVisitorId
+  fullVisitorId,
+  CAST(visitId AS STRING) AS visitId
 FROM
   `data-to-insights.ecommerce.all_sessions_raw_table`
