@@ -11,3 +11,6 @@ CREATE OR REPLACE TABLE ecommerce.revenue_transactions_20170801
   channelGrouping STRING NOT NULL OPTIONS(description="Channel, e.g. Direct, Organic, Referral ..."),
   totalTransactionRevenue FLOAT64 NOT NULL OPTIONS(description="Revenue for the transaction")
 )
+OPTIONS(
+  description="Revenue transactions for 08/01/2017"
+) 
