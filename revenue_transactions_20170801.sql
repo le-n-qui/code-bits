@@ -16,6 +16,7 @@ OPTIONS(
 ) AS
 SELECT DISTINCT
   fullVisitorId,
-  CAST(visitId AS STRING) AS visitId
+  CAST(visitId AS STRING) AS visitId,
+  channelGrouping
 FROM
   `data-to-insights.ecommerce.all_sessions_raw_table`
