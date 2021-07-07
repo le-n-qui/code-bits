@@ -4,3 +4,7 @@
 
 # Take one day of ecommerce data to explore
 CREATE OR REPLACE TABLE ecommerce.revenue_transactions_20170801
+#schema
+(
+  fullVisitorId STRING NOT NULL OPTIONS(description="Unique visitor ID")  
+)
