@@ -8,5 +8,6 @@ CREATE OR REPLACE TABLE ecommerce.revenue_transactions_20170801
 (
   fullVisitorId STRING NOT NULL OPTIONS(description="Unique visitor ID"),
   visitId STRING NOT NULL OPTIONS(description="ID of the session, not unique across all the users"),
-  channelGrouping STRING NOT NULL OPTIONS(description="Channel, e.g. Direct, Organic, Referral ...")
+  channelGrouping STRING NOT NULL OPTIONS(description="Channel, e.g. Direct, Organic, Referral ..."),
+  totalTransactionRevenue FLOAT64 NOT NULL OPTIONS(description="Revenue for the transaction")
 )
