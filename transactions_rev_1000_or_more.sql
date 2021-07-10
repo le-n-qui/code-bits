@@ -10,3 +10,14 @@ OPTIONS (
   description="large transactions for review",
   labels=[("org_unit", "loss_prevention")]
 )
+AS
+SELECT DISTINCT
+  date,
+  fullVisitorId,
+  visitId,
+  channelGrouping,
+  totalTransactionRevenue AS revenue,
+  currencyCode,
+  v2ProductName
+FROM
+  `data-to-insights.ecommerce.all_sessions_raw`
