@@ -21,3 +21,5 @@ SELECT DISTINCT
   v2ProductName
 FROM
   `data-to-insights.ecommerce.all_sessions_raw`
+WHERE
+  (totalTransactionRevenue / 1000000) >= 1000 # DO NOT use revenue alias
