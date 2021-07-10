@@ -6,3 +6,7 @@
 # transactions with revenue greater than 1,000 on or after 01/01/2017
 
 CREATE OR REPLACE VIEW ecommerce.vw_large_transactions
+OPTIONS (
+  description="large transactions for review",
+  labels=[("org_unit", "loss_prevention")]
+)
