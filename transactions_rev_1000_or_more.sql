@@ -4,3 +4,5 @@
 # amount of 1,000 or more for them to review manually
 # Task: Create a new view that returns all the most recent 10
 # transactions with revenue greater than 1,000 on or after 01/01/2017
+
+CREATE OR REPLACE VIEW ecommerce.vw_large_transactions
