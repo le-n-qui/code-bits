@@ -25,3 +25,6 @@ WHERE
   (totalTransactionRevenue / 1000000) >= 1000 # DO NOT use revenue alias as filter
   AND date >= '20170101'
   AND currencyCode = 'USD'
+ORDER BY date DESC # latest transactions
+LIMIT 10
+;
