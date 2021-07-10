@@ -16,7 +16,7 @@ SELECT DISTINCT
   fullVisitorId,
   visitId,
   channelGrouping,
-  totalTransactionRevenue AS revenue,
+  totalTransactionRevenue / 1000000 AS revenue,
   currencyCode,
   v2ProductName
 FROM
