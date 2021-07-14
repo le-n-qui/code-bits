@@ -7,7 +7,8 @@ SELECT
   stn,
   wban,
   temp, 
-  year
+  year,
+  _TABLE_SUFFIX AS table_name_year
 FROM
   `bigquery-public-data.noaa_gsod.gsod*`
 WHERE
