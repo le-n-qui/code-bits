@@ -10,3 +10,6 @@ SELECT
   year
 FROM
   `bigquery-public-data.noaa_gsod.gsod*`
+WHERE
+  _TABLE_SUFFIX > '1999'
+LIMIT 10
