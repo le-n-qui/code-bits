@@ -10,3 +10,5 @@ SELECT
   year
 FROM
   `bigquery-public-data.noaa_gsod.gsod1929`
+    UNION DISTINCT
+  `bigquery-public-data.noaa_gsod.gsod1930`
