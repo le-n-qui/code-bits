@@ -18,13 +18,15 @@ SELECT DISTINCT
   channelGrouping,
   totalTransactionRevenue / 1000000 AS revenue,
   currencyCode,
-  v2ProductName
+  STRING_AGG(DISTINCT v2ProductName ORDER BY v2ProductName LIMIT 10)
 FROM
   `data-to-insights.ecommerce.all_sessions_raw`
 WHERE
   (totalTransactionRevenue / 1000000) >= 1000 # DO NOT use revenue alias as filter
   AND date >= '20170101'
   AND currencyCode = 'USD'
+
+GROUP BY 1, 2, 3, 4, 5, 6
 ORDER BY date DESC # latest transactions
 LIMIT 10
 ;
