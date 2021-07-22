@@ -18,3 +18,9 @@ GROUP BY 1, 2, 3, 4
 SELECT * FROM employees_count_per_state
 WHERE rank = 1
 ORDER BY num_of_employees DESC;
+
+# RECAP:
+# 1. Use common table expression to create temp table (WITH clause)
+# 2. Use partitions with analytical function, e.g. RANK()
+# 3. Use USING() instead of comparing one table's key with that of another table
+# 4. Deduplicate result set with GROUP BY indexing table columns
