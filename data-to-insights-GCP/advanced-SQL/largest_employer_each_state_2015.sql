@@ -13,3 +13,6 @@ FROM
   `bigquery-public-data.irs_990.irs_990_ein`
 USING(ein)
 )
+
+SELECT * FROM employees_count_per_state
+WHERE rank = 1
