@@ -5,6 +5,9 @@ SELECT
   name, # Employer's name
   noemployeesw3cnt AS num_of_employees,
   state
+
+RANKED() OVER (PARTITION BY state ORDER BY noemployeesw3cnt DESC) AS rank
+
 FROM
   `bigquery-public-data.irs_990.irs_990_2015`
     JOIN
