@@ -12,6 +12,7 @@ FROM
     JOIN
   `bigquery-public-data.irs_990.irs_990_ein`
 USING(ein)
+GROUP BY 1, 2, 3, 4
 )
 
 SELECT * FROM employees_count_per_state
