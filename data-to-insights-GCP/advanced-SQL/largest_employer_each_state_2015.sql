@@ -17,3 +17,4 @@ GROUP BY 1, 2, 3, 4
 
 SELECT * FROM employees_count_per_state
 WHERE rank = 1
+ORDER BY num_of_employees DESC;
