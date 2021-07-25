@@ -2,6 +2,9 @@
 # BigQuery Public Data: IRS 990
 # Find the average income from IRS filings in year 2013 and later
 
+# Create a temporary table
+WITH summary AS (
+
 # Retrieve the year in which organization filed, the count of filings,
 # revenue and expenses since 2013
 SELECT
@@ -14,3 +17,5 @@ FROM
 WHERE _TABLE_SUFFIX >= '13'
 GROUP BY year_filed
 ORDER BY year_filed DESC
+
+)
