@@ -24,5 +24,11 @@ ORDER BY year_filed DESC
 # sort the results by average income from highest to lowest
 # include year_filed and other metrics in summary
 SELECT
-  *
+  year_filed,
+  nonprofit_count,
+  avg_revenue,
+  avg_expenses,
+  (avg_revenue - avg_expenses) AS avg_income
 FROM summary
+ORDER BY avg_income DESC
+
