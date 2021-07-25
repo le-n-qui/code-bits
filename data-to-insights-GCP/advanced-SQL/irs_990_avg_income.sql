@@ -19,3 +19,10 @@ GROUP BY year_filed
 ORDER BY year_filed DESC
 
 )
+
+# Using summary, find the average income (revenue - expenses)
+# sort the results by average income from highest to lowest
+# include year_filed and other metrics in summary
+SELECT
+  *
+FROM summary
